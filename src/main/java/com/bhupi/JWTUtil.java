@@ -14,6 +14,7 @@ public class JWTUtil {
 	public static String generateToken(String subject, String secretKey) {
 		
 		System.out.println("Testing Git Commands");
+		System.out.println("Done some changes in code for JIRA:HIS-122");
 		
 	  return Jwts.builder() 
 				.setId("Bhupi@9891")
