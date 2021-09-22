@@ -11,6 +11,8 @@ import io.jsonwebtoken.SignatureAlgorithm;
 
 public class JWTUtil {
 	
+	private static final String REST_URL = "https://www.equifax.com/getScores"; 
+	
 	public static String generateToken(String subject, String secretKey) {
 		
 		System.out.println("Testing Git Commands");
