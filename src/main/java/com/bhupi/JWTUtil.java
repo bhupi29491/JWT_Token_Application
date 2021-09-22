@@ -11,6 +11,8 @@ import io.jsonwebtoken.SignatureAlgorithm;
 
 public class JWTUtil {
 	
+	private Map<String,Object> cache = new HashMap<String,Object> 
+	
 	public static String generateToken(String subject, String secretKey) {
 		
 		System.out.println("Testing Git Commands");
@@ -44,5 +46,10 @@ public class JWTUtil {
 		System.out.println("Token Issued Time : "+claims.getIssuedAt());
 		System.out.println("Token Expiry Time : "+claims.getExpiration());
 		System.out.println("Token Audience : "+claims.getAudience());
+	}
+	
+	//This is related to HIS-301 changes
+	public void loadDataToCache(){
+		//Logic to Cache
 	}
 }
